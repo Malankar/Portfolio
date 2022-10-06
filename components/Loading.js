@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 
-const Loading = ({ isLoading }) => {
+const Loading = ({ isLoading, handleLoading }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      handleLoading();
+    }, 3000);
+    return () => {
+      clearTimeout();
+    };
+  }, [isLoading, handleLoading]);
+
   return (
     <>
       <div className="h-screen">

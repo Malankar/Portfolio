@@ -1,14 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.customCursor {
-  border-radius: 80;
-  background-color: transparent;
-}
-.body {
-  cursor: none;
-}
-.hoverable:hover {
-  background-color: transparent;
-  
+@layer {
+  .gradient {
+    /* background-image: url("/bg.jpg"); */
+    background-image: url("/bg.jpg"),
+      -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: url("/bg.jpg"),
+      linear-gradient(180deg, transparent, transparent);
+    /* background-position: -210px 0px, 0px 0px; */
+    /* background-size: 140%, auto; */
+    background-attachment: scroll, scroll;
+  }
 }
