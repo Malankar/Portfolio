@@ -4,7 +4,7 @@ const Loading = ({ isLoading, handleLoading }) => {
   useEffect(() => {
     setTimeout(() => {
       handleLoading();
-    }, 3000);
+    }, 2000);
     return () => {
       clearTimeout();
     };

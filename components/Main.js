@@ -10,7 +10,7 @@ const Main = () => {
   useEffect(() => {
     setToggleSideBar(true);
   }, []);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   return (
     <div className={dark ? "dark" : ""}>
@@ -30,7 +30,7 @@ const Main = () => {
             A V D H U T
           </a>
           <div className="text-black flex items-center text-4xl font-semibold font-[Montserrat] dark:text-white ">
-            <div className="p-2 border-gray-300 border rounded-full mr-3">
+            <div className="p-2 rounded-full mr-3">
               {dark ? (
                 <MdLightMode
                   className="text-xl text-blue-500 cursor-pointer"

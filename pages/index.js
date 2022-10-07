@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
@@ -30,7 +30,7 @@ export default function Home() {
       >
         <Loading isLoading={isLoading} handleLoading={handleLoading} />
       </div>
-      <div className=" absolute h-screen w-full ">
+      <div className="absolute h-screen w-full">
         <Main />
       </div>
     </div>
