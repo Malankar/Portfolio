@@ -25,7 +25,7 @@ const Project = ({ image, title, desc, techs, gitLink, link }) => {
         >
           <Image
             src={image}
-            className={hovered && "brightness-[0.3]"}
+            className={hovered ? "brightness-[0.3]": ""}
             alt=""
             width={1920}
             height={1080}
