@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import SideBar from "./SideBar";
@@ -67,6 +68,9 @@ const Main = () => {
         </div>
         <div className="md:max-w-3xl max-w-xl m-auto">
           <Projects />
+        </div>
+        <div className="md:max-w-3xl max-w-2xl m-auto">
+          <Contact />
         </div>
       </div>
     </div>

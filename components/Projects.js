@@ -25,6 +25,7 @@ const Projects = () => {
   };
   const products = [
     {
+      id: 1,
       image: "/projects/linkshr.svg",
       title: "Lnkshr",
       desc: "I have brought together this web app to help you share your links with your group in groups, so that anyone can open your links in the chain you are viewing them in.",
@@ -33,6 +34,7 @@ const Projects = () => {
       link: "https://lnkshr-e4kc.vercel.app/",
     },
     {
+      id: 2,
       image: "/projects/spotify.svg",
       title: "Spotify Redesign",
       desc: "Redesigning and creating a minimal spotify app that shows you your recently played songs, has inbuild player to play songs and also incredibly fast search functionality.",
@@ -52,7 +54,7 @@ const Projects = () => {
             image={item.image}
             title={item.title}
             desc={item.desc}
-            key={item.title}
+            key={item.id}
             techs={item.techs}
             gitLink={item.githubLink}
             link={item.link}
