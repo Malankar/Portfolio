@@ -72,7 +72,7 @@ const Skills = () => {
           <div className="flex items-center border border-black justify-between bg-transparent max-w-fit p-2 rounded-lg dark:border-white">
             <div className="w-10 h-10 flex justify-center items-center rounded-lg">
               {/* <FaFigma className="text-black w-8 h-8 dark:text-white" /> */}
-              <Image src="/figma.svg" width={26} height={26} />
+              <Image src="/figma.svg" alt="" width={26} height={26} />
             </div>
             <div className="text-black text-xl font-semibold flex ml-4 w-32 dark:text-white">
               Figma
