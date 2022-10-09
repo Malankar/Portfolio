@@ -6,7 +6,7 @@ import Main from "../components/Main";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState(true);
-  function handleLoading(params) {
+  function handleLoading() {
     setIsLoading(false);
   }
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.src" />
       </Head>
       <div
         className={

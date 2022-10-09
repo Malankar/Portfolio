@@ -15,9 +15,9 @@ const Main = () => {
 
   return (
     <div className={dark ? "dark" : ""}>
-      <div className="bg-transparent dark:bg-black z-10  overflow-y-hidden">
+      <div className="bg-transparent dark:bg-black z-10">
         <div
-          className="p-5 max-w-4xl m-auto flex items-center justify-between  "
+          className="p-5 max-w-4xl m-auto flex items-center justify-between "
           onClick={() => {
             if (!toggleSideBar) {
               setToggleSideBar((prev) => !prev);
@@ -34,26 +34,26 @@ const Main = () => {
             <div className="p-2 rounded-full mr-3">
               {dark ? (
                 <MdLightMode
-                  className="text-xl text-blue-500 cursor-pointer"
+                  className="text-xl w-7 h-7 text-blue-500 cursor-pointer"
                   onClick={() => setDark((prev) => !prev)}
                 />
               ) : (
                 <MdDarkMode
-                  className="text-xl text-blue-500 cursor-pointer"
+                  className="text-xl w-7 h-7 text-blue-500 cursor-pointer"
                   onClick={() => setDark((prev) => !prev)}
                 />
               )}
             </div>
-            <BiMenuAltRight
+            {/* <BiMenuAltRight
               className="cursor-pointer"
               onClick={(e) => {
                 e.stopPropagation();
                 setToggleSideBar((prev) => !prev);
               }}
-            />
+            /> */}
           </div>
         </div>
-        <div
+        {/* <div
           className={
             toggleSideBar
               ? `w-0 bg-black z-10 right-0 h-full md:top-0 top-14 fixed transition-all duration-500 dark:bg-white`
@@ -61,7 +61,7 @@ const Main = () => {
           }
         >
           <SideBar />
-        </div>
+        </div> */}
         <Hero dark={dark} />
         <div className="md:max-w-3xl max-w-xl m-auto">
           <Skills />

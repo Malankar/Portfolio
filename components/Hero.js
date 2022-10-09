@@ -4,7 +4,7 @@ import React from "react";
 const Hero = ({ dark }) => {
   return (
     <>
-      <div className="text-black dark:text-white block md:flex justify-center items-center max-w-4xl m-auto">
+      <div className="text-black  dark:text-white block md:flex justify-center items-center max-w-4xl m-auto">
         <div className="max-w-lg md:max-w-sm pl-5 text-black dark:text-white">
           <h1 className="text-3xl md:text-4xl font-semibold">
             Hello, I’m Avdhut Malankar
