@@ -14,7 +14,7 @@ const Main = ({ dark, setDark }) => {
   }, []);
   return (
     <div>
-      <div className="bg-transparent dark:bg-black z-10 ">
+      <div className="bg-transparent bg-[#fefefe] dark:bg-black z-10 ">
         <div
           className="p-5 max-w-4xl m-auto flex items-center justify-between xl:scale-150"
           onClick={() => {

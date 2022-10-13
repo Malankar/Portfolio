@@ -36,11 +36,11 @@ const Projects = () => {
     {
       id: 101,
       image: "/projects/linkshr.svg",
-      title: "Lnkshr",
+      title: "Linkshr",
       desc: "I have brought together this web app to help you share your links with your group in groups, so that anyone can open your links in the chain you are viewing them in.",
       techs: [techs.mongo, techs.nextjs, techs.nodejs, techs.tailwindcss],
-      githubLink: "https://github.com/Malankar/Lnkshr",
-      link: "https://lnkshr-e4kc.vercel.app/",
+      githubLink: "https://github.com/Malankar/Linkshr",
+      link: "https://linkshr.vercel.app/",
     },
     {
       id: 102,
