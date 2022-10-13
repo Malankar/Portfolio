@@ -27,10 +27,14 @@ const Hero = () => {
             creating websites.
           </p>
           <a href="/Avdhut Malankar Resume.pdf" download>
-            <div className="flex space-x-3 px-4 py-1.5 rounded-lg mt-5 w-fit bg-black text-white dark:bg-blue-500 cursor-pointer">
-              <div>Resume</div>
-              <div className="text-white flex justify-center items-center">
-                <FiArrowDown />
+            <div className="flex space-x-3  rounded-lg mt-5 w-fit bg-black text-white dark:bg-blue-600 cursor-pointer">
+              <div className="flex justify-center items-center px-2  py-1.5">
+                Resume
+              </div>
+              <div className="text-white flex justify-center items-center border-l border-gray-400 px-2 py-1.5">
+                <div className="animate-bounce">
+                  <FiArrowDown />
+                </div>
               </div>
             </div>
           </a>
