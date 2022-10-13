@@ -37,7 +37,7 @@ export default function Home() {
         className={
           show
             ? "absolute max-h-screen w-full  overflow-x-hidden"
-            : "absolute h-fit w-full overflow-y-hidden dark:bg-black"
+            : "absolute h-fit w-full overflow-y-hidden overflow-x-hidden dark:bg-black"
         }
       >
         <Main setDark={setDark} dark={dark} />

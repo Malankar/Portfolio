@@ -3,9 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { TbBrandInstagram, TbBrandMeta } from "react-icons/tb";
+import { BsGithub, BsTwitter } from "react-icons/bs";
 const Contact = () => {
   const { register, handleSubmit } = useForm();
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const form = useRef();
   function Success() {
     toast.success("Email Send Successfully!", {
@@ -43,14 +44,14 @@ const Contact = () => {
         <div className="text-2xl mb-8 mt-8 text-center font-semibold dark:text-white font-[Montserrat]">
           C O N T A C T &nbsp; U S
         </div>
-        <div className="text-2xl text-center dark:text-white">
+        <div className="text-xl md:text-2xl text-center dark:text-white">
           I have got just what you need.{" "}
           <span className="underline decoration-indigo-500 underline-offset-8	">
             {" "}
             Lets Talk!
           </span>
         </div>
-        <div className="w-full h-full flex justify-center p-5 mb-10">
+        <div className="w-full h-full flex justify-center p-5">
           <form
             ref={form}
             className="w-full mt-5 p-5"
@@ -135,6 +136,50 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        </div>
+        <div className="inline-flex justify-center items-center w-full">
+          <hr className="my-5 w-64 h-px bg-gray-200 border-black dark:border-white border-1 dark:bg-gray-700" />
+          <span className="absolute left-1/2 px-3 font-medium text-black bg-white -translate-x-1/2 dark:text-white dark:bg-black">
+            OR
+          </span>
+        </div>
+        <div className=" flex space-x-4 justify-center items-center mt-5">
+          <div className="text-blue-500">
+            <a
+              href="https://www.facebook.com/avdhut.malankar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbBrandMeta />
+            </a>
+          </div>
+          <div className="text-blue-500">
+            <a
+              href="https://www.instagram.com/pixelated_renders/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbBrandInstagram />
+            </a>
+          </div>
+          <div className="text-blue-500">
+            <a
+              href="https://github.com/Malankar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsGithub />
+            </a>
+          </div>
+          <div className="text-blue-500">
+            <a
+              href="https://twitter.com/AvdhutMalankar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsTwitter />
+            </a>
+          </div>
         </div>
       </div>
       <ToastContainer

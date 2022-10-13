@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
@@ -22,12 +23,11 @@ const Main = ({ dark, setDark }) => {
             }
           }}
         >
-          <a
-            href="#"
-            className=" text-black text-2xl font-semibold font-[Montserrat] dark:text-white"
-          >
-            A V D H U T
-          </a>
+          <Link href="/">
+            <div className=" text-black text-2xl font-semibold font-[Montserrat] dark:text-white cursor-pointer">
+              A V D H U T
+            </div>
+          </Link>
           <div className="text-black flex items-center text-4xl font-semibold font-[Montserrat] dark:text-white ">
             <div className="p-2 rounded-full mr-3">
               {dark ? (
