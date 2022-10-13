@@ -53,23 +53,25 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
-      <div className="text-2xl mb-8 mt-8 text-center font-semibold dark:text-white font-[Montserrat]">
+    <div className="">
+      <div className="text-2xl block lg:scale-150 lg:py-24 text-center font-semibold dark:text-white font-[Montserrat]">
         P R O J E C T S
       </div>
-      <div className="w-full rounded-lg bg-zinc-200 dark:bg-zinc-900 ">
-        {products.map((item) => (
-          <div key={item.id}>
-            <Project
-              image={item.image}
-              title={item.title}
-              desc={item.desc}
-              techs={item.techs}
-              gitLink={item.githubLink}
-              link={item.link}
-            />
-          </div>
-        ))}
+      <div className="w-full h-full">
+        <div className="block">
+          {products.map((item) => (
+            <div key={item.id}>
+              <Project
+                image={item.image}
+                title={item.title}
+                desc={item.desc}
+                techs={item.techs}
+                gitLink={item.githubLink}
+                link={item.link}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div>
+      <div className=" xl:scale-150 xl:py-48">
         <div className="text-2xl mb-8 mt-8 text-center font-semibold dark:text-white font-[Montserrat]">
           C O N T A C T &nbsp; U S
         </div>

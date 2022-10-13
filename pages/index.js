@@ -22,7 +22,7 @@ export default function Home() {
     <div className={dark ? "dark" : ""}>
       <Head>
         <title>Avdhut</title>
-        <link rel="icon" href="/favicon.src" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
         className={

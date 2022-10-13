@@ -13,9 +13,9 @@ const Main = ({ dark, setDark }) => {
   }, []);
   return (
     <div>
-      <div className="bg-transparent dark:bg-black z-10">
+      <div className="bg-transparent dark:bg-black z-10 ">
         <div
-          className="p-5 max-w-4xl m-auto flex items-center justify-between "
+          className="p-5 max-w-4xl m-auto flex items-center justify-between xl:scale-150"
           onClick={() => {
             if (!toggleSideBar) {
               setToggleSideBar((prev) => !prev);
@@ -60,8 +60,10 @@ const Main = ({ dark, setDark }) => {
         >
           <SideBar />
         </div> */}
-        <Hero dark={dark} />
-        <div className="md:max-w-3xl max-w-xl m-auto">
+        <div className="md:max-w-3xl max-w-xl m-auto xl:scale-150 xl:py-28">
+          <Hero dark={dark} />
+        </div>
+        <div className="md:max-w-3xl max-w-xl m-auto xl:scale-150 xl:py-28">
           <Skills />
         </div>
         <div className="md:max-w-3xl max-w-xl m-auto">
