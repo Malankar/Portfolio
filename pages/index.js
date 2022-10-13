@@ -17,7 +17,7 @@ export default function Home() {
       clearTimeout();
     };
   }, [show]);
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
   return (
     <div className={dark ? "dark" : ""}>
       <Head>
