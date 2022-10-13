@@ -6,15 +6,13 @@ import Hero from "./Hero";
 import Projects from "./Projects";
 import SideBar from "./SideBar";
 import Skills from "./Skills";
-const Main = () => {
+const Main = ({ dark, setDark }) => {
   const [toggleSideBar, setToggleSideBar] = useState(true);
   useEffect(() => {
     setToggleSideBar(true);
   }, []);
-  const [dark, setDark] = useState(true);
-
   return (
-    <div className={dark ? "dark" : ""}>
+    <div>
       <div className="bg-transparent dark:bg-black z-10">
         <div
           className="p-5 max-w-4xl m-auto flex items-center justify-between "

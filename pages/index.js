@@ -17,21 +17,30 @@ export default function Home() {
       clearTimeout();
     };
   }, [show]);
+  const [dark, setDark] = useState(true);
   return (
-    <div>
+    <div className={dark ? "dark" : ""}>
       <Head>
-        <title>Home</title>
+        <title>Avdhut</title>
         <link rel="icon" href="/favicon.src" />
       </Head>
       <div
         className={
-          show ? "absolute w-full h-screen overflow-x-hidden z-[100]" : "hidden"
+          show
+            ? "absolute w-screen h-screen overflow-x-hidden overflow-y-hidden z-[100]"
+            : "hidden"
         }
       >
         <Loading isLoading={isLoading} handleLoading={handleLoading} />
       </div>
-      <div className="absolute h-screen w-full">
-        <Main />
+      <div
+        className={
+          show
+            ? "absolute max-h-screen w-full  overflow-x-hidden"
+            : "absolute h-fit w-full overflow-y-hidden dark:bg-black"
+        }
+      >
+        <Main setDark={setDark} dark={dark} />
       </div>
     </div>
   );
