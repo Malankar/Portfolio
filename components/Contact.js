@@ -144,13 +144,13 @@ const Contact = () => {
           </span>
         </div>
         <div className=" flex space-x-4 justify-center items-center mt-5">
-          <div className="text-blue-500">
+          <div className="text-blue-500 ">
             <a
               href="https://www.facebook.com/avdhut.malankar/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TbBrandMeta />
+              <TbBrandMeta className="w-6 h-6" />
             </a>
           </div>
           <div className="text-blue-500">
@@ -159,7 +159,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TbBrandInstagram />
+              <TbBrandInstagram className="w-6 h-6" />
             </a>
           </div>
           <div className="text-blue-500">
@@ -168,7 +168,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsGithub />
+              <BsGithub className="w-5 h-5" />
             </a>
           </div>
           <div className="text-blue-500">
@@ -177,7 +177,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsTwitter />
+              <BsTwitter className="w-5 h-5" />
             </a>
           </div>
         </div>
