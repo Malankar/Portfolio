@@ -29,6 +29,7 @@ EmailJS (for Contact Us)
 ```
 
 Steps to get it working:
+
 Create a EmailJS account and make a template with this dynamic values in their respective fields:
 
 ```
