@@ -3,8 +3,8 @@
 First, Install all the packages:
 
 ```bash
-npm install  
-#or 
+npm install
+#or
 yarn
 ```
 
@@ -28,3 +28,12 @@ React Icons
 EmailJS (for Contact Us)
 ```
 
+Steps to get it working:
+Create a EmailJS account and make a template with this dynamic values in their respective fields:
+
+```
+From Name -> {{from_name}}
+From Email -> {{from_email}}
+message -> {{message}}
+subject -> {{subject}}
+```
