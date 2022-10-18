@@ -18,7 +18,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Packages:
+### Packages:
 
 ```
 React
@@ -28,7 +28,7 @@ React Icons
 EmailJS (for Contact Us)
 ```
 
-Steps to get it working:
+### Steps to get it working:
 
 Create a EmailJS account and make a template with this dynamic values in their respective fields:
 
