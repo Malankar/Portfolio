@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { BiLink } from "react-icons/bi";
 import { SiGithub, SiNodedotjs, SiTailwindcss } from "react-icons/si";
@@ -18,19 +16,24 @@ const Project = ({ image, title, desc, techs, gitLink, link }) => {
   return (
     <>
       <div className="md:block hidden xl:scale-150 xl:py-24">
-        <div className="rounded-lg bg-zinc-200 dark:bg-zinc-900">
+        <div className="rounded-lg dark:bg-zinc-900">
           <div
             className="relative"
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
           >
-            <Image
-              src={image}
-              className={hovered ? "brightness-[0.3]" : ""}
-              alt=""
-              width={1920}
-              height={1080}
-            />
+            <div className="p-40 md:p-10">
+              <img
+                src={image}
+                className={
+                  hovered
+                    ? "brightness-[0.3] rounded-xl "
+                    : "brightness-100 rounded-xl "
+                }
+                alt="imag"
+                layout="fill"
+              />
+            </div>
             <div className="absolute top-1/2 left-1/2 -mt-5 -ml-14 z-10 ">
               <div className="flex">
                 <a href={link} target="_blank" rel="noopener noreferrer">
@@ -89,9 +92,9 @@ const Project = ({ image, title, desc, techs, gitLink, link }) => {
           </div>
         </div>
       </div>
-      <div className="md:hidden block">
-        <Image src={image} alt="" width={1920} height={1080} />
-        <div className="px-[16px] -mt-8 ">
+      <div className="md:hidden block mt-4">
+        <img src={image} alt="" className="max-w-[94%] m-auto" />
+        <div className="px-[16px] -mt-3 ">
           <div className="w-full bg-zinc-800 h-full p-5 rounded-lg dark:bg-zinc-800">
             <div className="flex items-center justify-between">
               <h1 className="text-white text-2xl font-semibold select-none">

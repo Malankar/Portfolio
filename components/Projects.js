@@ -35,7 +35,7 @@ const Projects = () => {
   const products = [
     {
       id: 101,
-      image: "/projects/linkshr.svg",
+      image: "/projects/linkshr.png",
       title: "Linkshr",
       desc: "I have brought together this web app to help you share your links with your group in groups, so that anyone can open your links in the chain you are viewing them in.",
       techs: [techs.mongo, techs.nextjs, techs.nodejs, techs.tailwindcss],
@@ -44,7 +44,7 @@ const Projects = () => {
     },
     {
       id: 102,
-      image: "/projects/spotify.svg",
+      image: "/projects/spotify.png",
       title: "Spotify Redesign",
       desc: "Redesigning and creating a minimal spotify app that shows you your recently played songs, has inbuild player to play songs and also incredibly fast search functionality.",
       techs: [techs.tailwindcss, techs.nodejs, techs.spotify, techs.react],

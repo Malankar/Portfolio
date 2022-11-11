@@ -24,15 +24,17 @@ export default function Home() {
         <title>Avdhut</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div
-        className={
-          show
-            ? "absolute w-screen h-screen overflow-x-hidden overflow-y-hidden z-[100]"
-            : "hidden"
-        }
-      >
-        <Loading isLoading={isLoading} handleLoading={handleLoading} />
-      </div>
+      {show && (
+        <div
+          className={
+            show
+              ? "absolute w-screen h-screen overflow-x-hidden overflow-y-hidden z-[100]"
+              : "hidden"
+          }
+        >
+          <Loading isLoading={isLoading} handleLoading={handleLoading} />
+        </div>
+      )}
       <div
         className={
           show
